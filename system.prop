@@ -1,0 +1,97 @@
+#
+# system.prop for shengx7
+#
+rild.libpath=/system/lib/mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+
+# begin spezific MTK-configuration
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+ro.mediatek.gemini_support=true
+mediatek.wlan.ctia=0
+mediatek.wlan.chip=MT6628
+mediatek.wlan.module.postfix=_mt6628
+# end spezific MTK-configuration
+
+# The OpenGL ES API level that is natively supported by this device.
+# This is a 16.16 fixed point number.
+ro.opengles.version=131072
+
+# Dexopt on data
+# Ouh Sheng X7 should have big enough cache. Revisit later if not.
+#dalvik.vm.dexopt-data-only=1
+
+# Wifi interface device
+wifi.interface=wlan0
+wifi.tethering.interface=ap0
+wifi.direct.interface=p2p0
+
+# Dalvik settings
+dalvik.vm.heapgrowthlimit=128m
+dalvik.vm.heapsize=256m
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+
+# Bluetooth Configuration
+net.bt.name=iOcean-X7
+
+# Disable zram by default
+ro.zram.default=0
+
+# USB MTP WHQL
+ro.sys.usb.mtp.whql.enable=0
+
+# Power off opt in IPO
+sys.ipo.pwrdncap=2
+
+ro.sys.usb.storage.type=mtp,mass_storage
+
+# USB BICR function
+ro.sys.usb.bicr=yes
+
+# USB Charge only function
+ro.sys.usb.charging.only=yes
+
+# audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+ro.zygote.preload.enable=0
+
+#
+# ADDITIONAL_BUILD_PROPERTIES
+#
+ril.specific.sm_cause=0
+gps.solution.combo.chip=1
+ril.external.md=0
+fmradio.driver.chip=3
+ro.sf.hwrotation=0
+ril.current.share_modem=2
+curlockscreen=1
+persist.radio.fd.counter=15
+persist.radio.fd.off.counter=5
+persist.radio.fd.r8.counter=15
+persist.radio.fd.off.r8.counter=5
+persist.mtk.wcn.combo.chipid=-1
+drm.service.enabled=true
+fmradio.driver.enable=1
+ril.first.md=1
+ril.flightmode.poweroffMD=1
+ril.telephony.mode=1
+ril.radiooff.poweroffMD=0
+dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt
+
+# Density in DPI of the LCD of this board. This is used to scale the UI
+# appropriately. If this property is not defined, the default value is 160 dpi.
+ro.sf.lcd_density=480
+
+qemu.hw.mainkeys=1
+persist.sys.timezone=Asia/Shanghai
+ro.init.auto_time=true
+ro.init.write_mac_address=true
+persist.sys.keylight_switch=0
+
+# begin adupsfota properties
+ro.adups.fota.oem=Vanzo
+ro.adups.fota.device=iOCEAN X7
+ro.adups.fota.version=X7_3.0_13_ 20130705-174504
+# end adupsfota properties
