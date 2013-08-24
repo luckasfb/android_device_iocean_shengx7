@@ -7,3 +7,23 @@ lib/libUMP.so
 
 # 3G Modem RIL
 lib/mtk-ril.so
+lib/mtk-rilmd2.so
+
+# Specific Goldfish.sh
+etc/init.goldfish.sh
+
+# Specific MTK
+lib/libmtk_vt_client.so
+lib/libmtk_vt_em.so
+lib/libmtk_vt_service.so
+lib/libmtk_vt_swip.so
+lib/libmtk_vt_utils.so
+
+lib/modules/mtk_fm_drv.ko
+lib/modules/mtk_hif_sdio.ko
+lib/modules/mtk_stp_bt.ko
+lib/modules/mtk_stp_gps.ko
+lib/modules/mtk_wmt_wifi.ko
+
+lib/hw/power.default.so
+lib/hw/sensors.default.so
