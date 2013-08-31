@@ -1,4 +1,4 @@
-Device configuration for the iOcean Ouh Sheng X7 (aka shengx7)
+Device configuration for the iOcean Ouh Sheng X7 (aka v7)
 
 Copyright (C) 2012 The CyanogenMod Project
 

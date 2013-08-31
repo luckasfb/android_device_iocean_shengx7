@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VENDOR=iocean
-DEVICE=shengx7
+DEVICE=v7
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 

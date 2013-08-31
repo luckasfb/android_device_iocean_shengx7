@@ -18,4 +18,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_shengx7.mk
+    $(LOCAL_DIR)/full_V7.mk

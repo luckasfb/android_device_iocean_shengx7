@@ -25,13 +25,13 @@
 # against the traditional rules of inheritance).
 
 # Vendor stuff
--include vendor/iocean/shengx7/BoardConfigVendor.mk
+-include vendor/iocean/V7/BoardConfigVendor.mk
 
 # Custom kernel header
-TARGET_SPECIFIC_HEADER_PATH := device/iocean/shengx7/include
+TARGET_SPECIFIC_HEADER_PATH := device/iocean/V7/include
 
 # Platform
-TARGET_BOOTLOADER_BOARD_NAME := shengx7
+TARGET_BOOTLOADER_BOARD_NAME := V7
 TARGET_BOARD_PLATFORM := MT6589T
 TARGET_BOARD_PLATFORM_GPU := PowerVR SGX 544
 TARGET_NO_BOOTLOADER := true
@@ -48,10 +48,10 @@ BOARD_KERNEL_BASE := 0x00400000
 BOARD_KERNEL_PAGESIZE := 4096
 #TARGET_KERNEL_SOURCE := kernel/iocean/MT6589T/
 #TARGET_KERNEL_CONFIG := shengx7_defconfig
-TARGET_PREBUILT_KERNEL := device/iocean/shengx7/prebuilt/zImage
+TARGET_PREBUILT_KERNEL := device/iocean/V7/prebuilt/zImage
 
 # EGL
-BOARD_EGL_CFG := device/iocean/shengx7/config/egl.cfg
+BOARD_EGL_CFG := device/iocean/V7/config/egl.cfg
 BOARD_EGL_NEEDS_LEGACY_FB := true
 USE_OPENGL_RENDERER := true
 
@@ -95,11 +95,11 @@ BOARD_VOLD_MAX_PARTITIONS := 28
 
 # Recovery
 # Custom recovery files
-TARGET_RECOVERY_INITRC := device/iocean/shengx7/recovery/init.rc
-TARGET_RECOVERY_FSTAB := device/iocean/shengx7/recovery/recovery.fstab
-TARGET_PREBUILT_RECOVERY_KERNEL := device/iocean/shengx7/recovery/zImage
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/iocean/shengx7/recovery/recovery_keys.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/iocean/shengx7/recovery/graphics.c
+TARGET_RECOVERY_INITRC := device/iocean/V7/recovery/init.rc
+TARGET_RECOVERY_FSTAB := device/iocean/V7/recovery/recovery.fstab
+TARGET_PREBUILT_RECOVERY_KERNEL := device/iocean/V7/recovery/zImage
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/iocean/V7/recovery/recovery_keys.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/iocean/V7/recovery/graphics.c
 
 # Partition flags for CWM/TWRP
 BOARD_HAS_SDCARD_INTERNAL := true

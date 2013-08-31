@@ -18,6 +18,6 @@ LOCAL_PATH := $(call my-dir)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),shengx7)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),V7)
 include $(call first-makefiles-under,$(call my-dir))
 endif

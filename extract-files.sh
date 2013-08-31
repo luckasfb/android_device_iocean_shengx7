@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VENDOR=iocean
-DEVICE=sheng7
+DEVICE=v7
 
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 rm -rf $BASE/*
