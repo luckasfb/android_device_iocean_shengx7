@@ -95,16 +95,26 @@ BOARD_VOLD_MAX_PARTITIONS := 28
 
 # Recovery
 # Custom recovery files
-TARGET_RECOVERY_INITRC := device/iocean/V7/recovery/init.rc
 TARGET_RECOVERY_FSTAB := device/iocean/V7/recovery/recovery.fstab
-TARGET_PREBUILT_RECOVERY_KERNEL := device/iocean/V7/recovery/zImage
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/iocean/V7/recovery/recovery_keys.c
 BOARD_CUSTOM_GRAPHICS := ../../../device/iocean/V7/recovery/graphics.c
 
 # Partition flags for CWM/TWRP
 BOARD_HAS_SDCARD_INTERNAL := true
 BOARD_USES_MMCUTILS := true
-BOARD_HAS_NO_MISC_PARTITION := true
+SP1_NAME := "pds"
+SP1_BACKUP_METHOD := files
+SP1_MOUNTABLE := 1
+SP2_NAME := "osh"
+SP2_DISPLAY_NAME := "Webtop"
+SP2_BACKUP_METHOD := files
+SP2_MOUNTABLE := 1
+SP3_NAME := "preinstall"
+SP3_BACKUP_METHOD := image
+SP3_MOUNTABLE := 0
+RECOVERY_SDCARD_ON_DATA := true
+TW_NO_BATT_PERCENT := false
 
 # TWRP mount points
 TW_INTERNAL_STORAGE_PATH := "/sdcard"
@@ -117,7 +127,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TW_CUSTOM_POWER_BUTTON := 107
 
 # Screen configuration
-DEVICE_RESOLUTION := 10801920
+DEVICE_RESOLUTION := 1080x1920
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # TWRP brightness settings
